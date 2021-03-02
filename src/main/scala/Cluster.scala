@@ -4,7 +4,7 @@ class Cluster (x: Float, y: Float, val id: Int) {
 
   //Variables
 
-  private var m_points: List[Point2D] = List()
+  var m_points: List[Point2D] = List()
   private var m_couleur: String = _
   private var m_moyenne: Point2D = new Point2D(x, y)
 
@@ -38,7 +38,7 @@ class Cluster (x: Float, y: Float, val id: Int) {
     val ys = this.m_points.map( point => point.Y )
     val x = xs.sum / xs.length
     val y = ys.sum / xs.length
-    this.m_moyenne = new Point2D(x, y);
+    this.m_moyenne = new Point2D(x, y)
   }
 
   //Fonction toString

@@ -43,7 +43,7 @@ class Point2D(private val x: Float, private val y: Float) {
     val myClusterAndDistance = myClusterAndDistanceF(myClustersAndDistances)
 
     this.m_cluster = myClusterAndDistance._1
-    this.m_cluster.getPoints = this :: this.m_cluster.getPoints
+    this.m_cluster.m_points = this :: this.m_cluster.m_points
   }
 
 

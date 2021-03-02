@@ -9,4 +9,9 @@ object Utils {
     rand.nextFloat() * gap + start
   }
 
+
+  def ~=(x: Double, y: Double, precision: Double) = {
+    if ( (x - y).abs < precision) true else false
+  }
+
 }
